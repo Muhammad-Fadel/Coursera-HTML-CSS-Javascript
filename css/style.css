@@ -1,0 +1,98 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	margin: 40px;
+}
+
+div {
+	margin: 15px auto;
+	padding: 15px;
+	border: 2px solid #000;
+	width: 90%;
+	position: relative;
+	background-color: #858282;
+}
+
+h3 {
+	border-bottom: 2px solid #000;
+	border-left: 2px solid #000;
+	padding: 5px 30px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.pizza_head {
+	background-color: #c43838;
+	color: #ffff;
+}
+
+.chicken_head {
+	background-color: #e87911;
+	color: #ffff;
+}
+
+.coffee_head {
+	background-color: #422b2b;
+	color: #ffff;
+}
+
+p {
+	padding-top: 35px;
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+	section {
+		float: left;
+		padding-top: 15px;
+		width: 33.33%;
+		height: 25px;
+	}
+
+	.pizza {
+		padding-left: 15px;
+	}
+
+	.coffee {
+		padding-right: 15px;
+	}
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	section {
+		float: left;
+		padding-top: 15px;
+	}
+
+	.pizza,
+	.chicken {
+		width: 50%;
+	}
+
+	.pizza {
+		padding-left: 15px;
+	}
+
+	.chicken {
+		padding-right: 15px;
+	}
+
+	.coffee {
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	#coffee {
+		width: 95%;
+	}
+}
